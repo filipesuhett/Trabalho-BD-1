@@ -13,7 +13,7 @@ Caio Daniel Meireles de Souza: caiodaniel7437@gmail.com<br>
 
 ### 2.MINI-MUNDO<br>
 
-> Uma pessoa interessada em adquirir um novo carro decide utilizar um Sistema de Auxílio à Compra de Carros para tornar sua decisão mais informada e conveniente. Primeiramente, ela se cadastra no sistema, fornecendo suas informações pessoais, como nome, endereço e preferências de compra. Especifica seu orçamento e o tipo de carro que está buscando.
+> Uma pessoa interessada em adquirir um novo carro decide utilizar um Sistema de Auxílio à Compra de Carros para tornar sua decisão mais informada e conveniente. Primeiramente, ela se cadastra no sistema, fornecendo suas informações pessoais, como nome, endereço, data de nascimento e preferências de compra. Especifica seu orçamento e o tipo de carro que está buscando.
 Com o perfil criado, inicia a pesquisa filtrando os carros disponíveis com base em critérios como marca, modelo, tipo de carroceria e preço do veículo usado ou novo. Encontra várias opções que se encaixam em suas preferências. Para uma decisão mais embasada, utiliza a função de comparação de carros do sistema, analisando detalhadamente diferentes modelos, comparando especificações técnicas (motor, desempenho, transmissão, tração, suspensão, freios, direção e dimensões do veículo), preços e recursos (como ar condicionado, gps, sistema de som, etc). O usuário também pode deixar ou verificas as avaliações de outros motoristas disponíveis no sistema para ter certeza de que os locais de compra são de confiança e possuem um bom atendimento. Além disso, enquanto pesquisa, o usuário recebe notificações sobre ofertas especiais em carros semelhantes aos que está considerando, ajudando-a a se manter atualizada sobre oportunidades de economia.
 Após selecionar um dos carros, decide agendar um test drive usando o sistema. Localiza concessionárias locais que oferecem o carro desejado e faz um agendamento conveniente.
 No dia do test drive, visita a concessionária e avalia pessoalmente o carro. Todo o processo que envolve estar o carro, a forma de pagamento e a compra efetiva é feito na concessionária, não tendo relação com o sistema.
@@ -24,11 +24,11 @@ No dia do test drive, visita a concessionária e avalia pessoalmente o carro. To
     a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
     b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
     
-> A Empresa DevCom precisa inicialmente dos seguintes relatórios:
-* Relatório que mostre o nome de cada supervisor(a) e a quantidade de empregados supervisionados.
-* Relatório relativo aos os supervisores e supervisionados. O resultado deve conter o nome do supervisor e nome do supervisionado além da quantidade total de horas que cada supervisionado tem alocada aos projetos existentes na empresa.
-* Relatorio que mostre para cada linha obtida o nome do departamento, o valor individual de cada salario existente no  departamento e a média geral de salarios dentre todos os empregados. Os resultados devem ser apresentados ordenados por departamento.
-* Relatório que mostre as informações relacionadas a todos empregados de empresa (sem excluir ninguém). As linhas resultantes devem conter informações sobre: rg, nome, salario do empregado, data de início do salario atual, nomes dos projetos que participa, quantidade de horas e localização nos referidos projetos, numero e nome dos departamentos aos quais está alocado, informações do historico de salário como inicio, fim, e valores de salarios antigos que foram inclusos na referida tabela (caso possuam informações na mesma), além de todas informações relativas aos dependentes. 
+> A Empresa necessita dos seguintes relatórios:
+* Relatório que mostre os municipios e estados que mais acessam o sistema, tal qual a quantidade de acessos
+* Relatório que mostre os 20 carros mais acessados na semana, com a quantidade de acessos de cada
+* Relatorio que mostre as concessionárias mais populares entre os usuários do sistema, com suas localizações e respectiva avaliação final
+* Relatório que mostre as informações relacionadas ao perfil dos usuários do sistema. O relatório deve ter informações como: sexo, idade, modelos de carro preferidos, marcas preferidas e orçamento médio
 >> ##### Observações: <br> a) perceba que este relatório pode conter linhas com alguns dados repetidos (mas não todos). <br>  b) para os empregados que não possuirem alguma destas informações o valor no registro deve aparecer sem informação/nulo. 
 * Relatório que obtenha a frequencia absoluta e frequencia relativa da quantidade de cpfs únicos no relatório anterior. Apresente os resultados ordenados de forma decrescente pela frequencia relativa.
 
