@@ -9,6 +9,7 @@ O projeto em questão visa o desenvolvimento de um inovador sistema de vendas de
 1. [COMPONENTES](#1-componentes)
 2. [MINI-MUNDO](#2-mini-mundo)
 3. [PERGUNTAS A SEREM RESPONDIDAS](#3-perguntas-a-serem-respondidas)
+4. [-](#-)
 5. [DESCRIÇÃO DOS DADOS](#5-descrição-dos-dados)
 6. [MODELO LÓGICO](#6-modelo-lógico)
 7. [MODELO FÍSICO](#7-modelo-físico)
