@@ -26,8 +26,8 @@ O projeto em questão visa o desenvolvimento de um inovador sistema de vendas de
    - [CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)](#99consultas-com-self-join-e-view-mínimo-6)
    - [SUBCONSULTAS (Mínimo 4)](#910subconsultas-mínimo-4)
 10. [RELATÓRIOS E GRÁFICOS](#10-relatórios-e-gráficos)
-11. [AJUSTES DA DOCUMENTAÇÃO, CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇÃO FINAL](#11-ajustes-da-documentação-criação-dos-slides-e-vídeo-para-apresentação-final)
-12. [FORMATAÇÃO NO GIT](#12-formatação-no-git)
+11. [AJUSTES DA DOCUMENTAÇÃO, CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇÃO FINAL](#11-ajustes-da-documentação-criação-dos-slides-e-vídeo-para-apresentaçao-final-)
+12. [FORMATAÇÃO NO GIT](#12-formatacao-no-git)
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
