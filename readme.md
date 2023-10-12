@@ -62,7 +62,8 @@ No dia do test drive, visita a concessionária e avalia pessoalmente o carro. To
     Principais entidades do sistema: Pessoa, Carro e Info_tecnicas. São as principais entidades envolvidas na pesquisa e compra dos carros pelos clientes.
     Principais fluxos: Pessoa compra carro, carro possui informações técnicas e carro pertence a concessionária.
 	
-![image](https://github.com/filipesuhett/Trabalho-BD-1/assets/72825142/a817ecf9-6198-4bfe-8cfc-3004037d0ff9)
+![image](https://github.com/filipesuhett/Trabalho-BD-1/assets/72825142/f85f089d-48db-45ba-abd3-9e3fd81f2c7e)
+
 
     
     
