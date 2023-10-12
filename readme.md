@@ -6,7 +6,7 @@ O projeto em questão visa o desenvolvimento de um inovador sistema de vendas de
 
 # Sumário
 
-1. [1. COMPONENTES](#componentes)
+1. [COMPONENTES](#componentes)
 2. [MINI-MUNDO](#mini-mundo)
 3. [PERGUNTAS A SEREM RESPONDIDAS](#perguntas-a-serem-respondidas)
 4. [MODELO CONCEITUAL](#modelo-conceitual)
@@ -16,21 +16,21 @@ O projeto em questão visa o desenvolvimento de um inovador sistema de vendas de
 7. [MODELO FÍSICO](#modelo-físico)
 8. [INSERT APLICADO NAS TABELAS DO BANCO DE DADOS](#insert-aplicado-nas-tabelas-do-banco-de-dados)
 9. [TABELAS E PRINCIPAIS CONSULTAS](#tabelas-e-principais-consultas)
-   - [CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (TODAS)](#consultas-das-tabelas-com-todos-os-dados-inseridos-todas)
-   - [CONSULTAS DAS TABELAS COM FILTROS WHERE (MÍNIMO 4)](#consultas-das-tabelas-com-filtros-where-mínimo-4)
-   - [CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (MÍNIMO 11)](#consultas-que-usam-operadores-lógicos-aritméticos-e-tabelas-ou-campos-renomeados-mínimo-11)
-   - [CONSULTAS QUE USAM OPERADORES LIKE E DATAS (MÍNIMO 12)](#consultas-que-usam-operadores-like-e-datas-mínimo-12)
-   - [INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (MÍNIMO 6)](#instruções-aplicando-atualização-e-exclusão-de-dados-mínimo-6)
-   - [CONSULTAS COM INNER JOIN E ORDER BY (MÍNIMO 6)](#consultas-com-inner-join-e-order-by-mínimo-6)
-   - [CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (MÍNIMO 6)](#consultas-com-group-by-e-funções-de-agrupamento-mínimo-6)
-   - [CONSULTAS COM LEFT, RIGHT E FULL JOIN (MÍNIMO 4)](#consultas-com-left-right-e-full-join-mínimo-4)
-   - [CONSULTAS COM SELF JOIN E VIEW (MÍNIMO 6)](#consultas-com-self-join-e-view-mínimo-6)
-   - [SUBCONSULTAS (MÍNIMO 4)](#subconsultas-mínimo-4)
+   - [CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas)](#consultas-das-tabelas-com-todos-os-dados-inseridos-todas)
+   - [CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)](#consultas-das-tabelas-com-filtros-where-mínimo-4)
+   - [CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)](#consultas-que-usam-operadores-lógicos-aritméticos-e-tabelas-ou-campos-renomeados-mínimo-11)
+   - [CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12)](#consultas-que-usam-operadores-like-e-datas-mínimo-12)
+   - [INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)](#instruções-aplicando-atualização-e-exclusão-de-dados-mínimo-6)
+   - [CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)](#consultas-com-inner-join-e-order-by-mínimo-6)
+   - [CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)](#consultas-com-group-by-e-funções-de-agrupamento-mínimo-6)
+   - [CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)](#consultas-com-left-right-e-full-join-mínimo-4)
+   - [CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)](#consultas-com-self-join-e-view-mínimo-6)
+   - [SUBCONSULTAS (Mínimo 4)](#subconsultas-mínimo-4)
 10. [RELATÓRIOS E GRÁFICOS](#relatórios-e-gráficos)
 11. [AJUSTES DA DOCUMENTAÇÃO, CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇÃO FINAL](#ajustes-da-documentação-criação-dos-slides-e-vídeo-para-apresentação-final)
 12. [FORMATAÇÃO NO GIT](#formatação-no-git)
 
-## 1. COMPONENTES<br>
+### 1. COMPONENTES<br>
 Integrantes do grupo<br>
 Giovanna Scalfoni: giovanna.scalfoni@gmail.com<br>
 Filipe Suhett: filipe.gmx@gmail.com<br>
