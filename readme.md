@@ -6,10 +6,10 @@ O projeto em questão visa o desenvolvimento de um inovador sistema de vendas de
 
 # Sumário
 
-1. [COMPONENTES](#componentes)
-2. [MINI-MUNDO](#mini-mundo)
-3. [PERGUNTAS A SEREM RESPONDIDAS](#perguntas-a-serem-respondidas)
-4. [MODELO CONCEITUAL](#modelo-conceitual)
+1. [COMPONENTES](#1-componentes)
+2. [MINI-MUNDO](#2-mini-mundo)
+3. [PERGUNTAS A SEREM RESPONDIDAS](#3-perguntas-a-serem-respondidas)
+4. [MODELO CONCEITUAL](#4-modelo-conceitual)
    - [VALIDAÇÃO DO MODELO CONCEITUAL](#validação-do-modelo-conceitual)
 5. [DESCRIÇÃO DOS DADOS](#descrição-dos-dados)
 6. [MODELO LÓGICO](#modelo-lógico)
