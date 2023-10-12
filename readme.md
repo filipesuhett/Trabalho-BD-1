@@ -48,9 +48,7 @@ No dia do test drive, visita a concessionária e avalia pessoalmente o carro. To
 
 ### 3.PERGUNTAS A SEREM RESPONDIDAS<br>
 #### 3.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
-    a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
-    b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
-    
+
 > A Empresa necessita dos seguintes relatórios:
 * Relatório que mostre os municipios e estados que mais acessam o sistema, tal qual a quantidade de acessos
 * Relatório que mostre os 20 carros mais acessados na semana, com a quantidade de acessos de cada
