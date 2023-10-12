@@ -1,8 +1,34 @@
 # TRABALHO 01:  Sistema de vendas de veículos
 
-### Introdução
+# Introdução e Motivação
+
+O projeto em questão visa o desenvolvimento de um inovador sistema de vendas de veículos, pautado na abrangência de um público diversificado, compreendendo desde entusiastas automotivos experientes até aqueles que estão apenas começando a explorar o universo dos automóveis. Nosso compromisso primordial consiste em criar uma solução minuciosa e criteriosa, projetada para oferecer suporte abrangente a qualquer indivíduo que almeje adquirir um veículo novo.
 
 # Sumário
+
+1. [Componentes](#componentes)
+2. [Mini-Mundo](#mini-mundo)
+3. [Perguntas a serem Respondidas](#perguntas-a-serem-respondidas)
+4. [Modelo Conceitual](#modelo-conceitual)
+   - [Validação do Modelo Conceitual](#validação-do-modelo-conceitual)
+5. [Descrição dos Dados](#descrição-dos-dados)
+6. [Modelo Lógico](#modelo-lógico)
+7. [Modelo Físico](#modelo-físico)
+8. [Insert Aplicado nas Tabelas do Banco de Dados](#insert-aplicado-nas-tabelas-do-banco-de-dados)
+9. [Tabelas e Principais Consultas](#tabelas-e-principais-consultas)
+   - [Consultas das Tabelas com Todos os Dados Inseridos](#consultas-das-tabelas-com-todos-os-dados-inseridos-todas)
+   - [Consultas das Tabelas com Filtros WHERE](#consultas-das-tabelas-com-filtros-where-mínimo-4)
+   - [Consultas que Usam Operadores Lógicos, Aritméticos e Tabelas ou Campos Renomeados](#consultas-que-usam-operadores-lógicos-aritméticos-e-tabelas-ou-campos-renomeados-mínimo-11)
+   - [Consultas que Usam Operadores LIKE e Datas](#consultas-que-usam-operadores-like-e-datas-mínimo-12)
+   - [Instruções Aplicando Atualização e Exclusão de Dados](#instruções-aplicando-atualização-e-exclusão-de-dados-mínimo-6)
+   - [Consultas com INNER JOIN e ORDER BY](#consultas-com-inner-join-e-order-by-mínimo-6)
+   - [Consultas com GROUP BY e Funções de Agrupamento](#consultas-com-group-by-e-funções-de-agrupamento-mínimo-6)
+   - [Consultas com LEFT, RIGHT e FULL JOIN](#consultas-com-left-right-e-full-join-mínimo-4)
+   - [Consultas com Self Join e View](#consultas-com-self-join-e-view-mínimo-6)
+   - [Subconsultas](#subconsultas-mínimo-4)
+10. [Relatórios e Gráficos](#relatórios-e-gráficos)
+11. [Ajustes da Documentação, Criação dos Slides e Vídeo para Apresentação Final](#ajustes-da-documentação-criação-dos-slides-e-vídeo-para-apresentação-final)
+12. [Formatação no Git](#formatação-no-git)
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
