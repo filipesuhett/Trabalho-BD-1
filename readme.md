@@ -54,10 +54,9 @@ No dia do test drive, visita a concessionária e avalia pessoalmente o carro. To
 > A Empresa necessita dos seguintes relatórios:
 * Relatório que mostre os municipios e estados que mais acessam o sistema, tal qual a quantidade de acessos
 * Relatório que mostre os 20 carros mais acessados na semana, com a quantidade de acessos de cada
-* Relatorio que mostre as concessionárias mais populares entre os usuários do sistema, com suas localizações e respectiva avaliação final
+* Relatorio que mostre as concessionárias mais populares/bem avaliadas entre os usuários do sistema, com suas localizações e respectiva avaliação final
 * Relatório que mostre as informações relacionadas ao perfil dos usuários do sistema. O relatório deve ter informações como: sexo, idade, modelos de carro preferidos, marcas preferidas e orçamento médio
->> ##### Observações: <br> a) perceba que este relatório pode conter linhas com alguns dados repetidos (mas não todos). <br>  b) para os empregados que não possuirem alguma destas informações o valor no registro deve aparecer sem informação/nulo. 
-* Relatório que obtenha a frequencia absoluta e frequencia relativa da quantidade de cpfs únicos no relatório anterior. Apresente os resultados ordenados de forma decrescente pela frequencia relativa.
+* Relatório que obtenha quantos clientes usuários fizeram a compra efetiva do carro com o auxílio do sistema. Deve mostrar a compatibilidade do carro comprado com as preferências anteriormente especificadas no perfil do cliente, assim como comparar o orçamento com o preço pago
 
     
 ### 5.MODELO CONCEITUAL<br>
