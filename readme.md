@@ -30,7 +30,7 @@ O projeto em questão visa o desenvolvimento de um inovador sistema de vendas de
 11. [AJUSTES DA DOCUMENTAÇÃO, CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇÃO FINAL](#ajustes-da-documentação-criação-dos-slides-e-vídeo-para-apresentação-final)
 12. [FORMATAÇÃO NO GIT](#formatação-no-git)
 
-### 1. COMPONENTES
+## 1. COMPONENTES<br>
 Integrantes do grupo<br>
 Giovanna Scalfoni: giovanna.scalfoni@gmail.com<br>
 Filipe Suhett: filipe.gmx@gmail.com<br>
