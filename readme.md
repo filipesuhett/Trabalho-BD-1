@@ -6,7 +6,7 @@ O projeto em questão visa o desenvolvimento de um inovador sistema de vendas de
 
 # Sumário
 
-1. [COMPONENTES](#componentes)
+1. [1. COMPONENTES](#componentes)
 2. [MINI-MUNDO](#mini-mundo)
 3. [PERGUNTAS A SEREM RESPONDIDAS](#perguntas-a-serem-respondidas)
 4. [MODELO CONCEITUAL](#modelo-conceitual)
@@ -38,7 +38,7 @@ Bruno Plazzi: brunoplazzi@hotmail.com<br>
 Caio Daniel Meireles de Souza: caiodaniel7437@gmail.com<br>
 
 
-### 2.MINI-MUNDO<br>
+### 2. MINI-MUNDO<br>
 
 > Uma pessoa interessada em adquirir um novo carro decide utilizar um Sistema de Auxílio à Compra de Carros para tornar sua decisão mais informada e conveniente. Primeiramente, ela se cadastra no sistema, fornecendo suas informações pessoais, como nome, endereço e preferências de compra, especificando seu orçamento e o tipo de carro que está buscando.
 Com o perfil criado, inicia a pesquisa filtrando os carros disponíveis com base em critérios como marca, modelo, tipo de carroceria, preço do veículo e se é usado ou novo, encontrando várias opções que se encaixam em suas preferências. Para uma decisão mais embasada, utiliza a função de comparação de carros do sistema, analisando detalhadamente diferentes modelos, comparando informações técnicas do carro (motor, desempenho, transmissão, tração, suspensão, freios, direção e dimensões do veículo) e preços. O usuário também pode deixar ou verificas as avaliações de outros motoristas disponíveis no sistema para ter certeza de que os locais de compra são de confiança e possuem um bom atendimento. Além disso, enquanto pesquisa, o usuário recebe notificações sobre ofertas especiais em carros semelhantes aos que está considerando, ajudando-a a se manter atualizada sobre oportunidades de economia.
@@ -46,7 +46,7 @@ Após selecionar um dos carros, decide agendar um test drive usando o sistema. L
 No dia do test drive, visita a concessionária e avalia pessoalmente o carro. Todo o processo que envolve testar o carro, a forma de pagamento e a compra efetiva é feito na concessionária, não tendo relação com o sistema.
 
 
-### 3.PERGUNTAS A SEREM RESPONDIDAS<br>
+### 3. PERGUNTAS A SEREM RESPONDIDAS<br>
 #### 3.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
 
 > A Empresa necessita dos seguintes relatórios:
@@ -57,7 +57,7 @@ No dia do test drive, visita a concessionária e avalia pessoalmente o carro. To
 * Relatório que obtenha quantos clientes usuários fizeram a compra efetiva do carro com o auxílio do sistema. Deve mostrar a compatibilidade do carro comprado com as preferências anteriormente especificadas no perfil do cliente, assim como comparar o orçamento com o preço pago
 
     
-### 5.MODELO CONCEITUAL<br>
+### 5. MODELO CONCEITUAL<br>
     
     Principais entidades do sistema: Pessoa, Carro e Info_tecnicas. São as principais entidades envolvidas na pesquisa e compra dos carros pelos clientes.
     Principais fluxos: Pessoa compra carro, carro possui informações técnicas e carro pertence a concessionária.
@@ -81,17 +81,17 @@ No dia do test drive, visita a concessionária e avalia pessoalmente o carro. To
 
 ># Marco de Entrega 01: Do item 1 até o item 5.2 (5 PTS) <br> 
 
-### 6	MODELO LÓGICO<br>
+### 6. MODELO LÓGICO<br>
         a) inclusão do esquema lógico do banco de dados
         b) verificação de correspondencia com o modelo conceitual 
         (não serão aceitos modelos que não estejam em conformidade)
 
-### 7	MODELO FÍSICO<br>
+### 7. MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas em SQL/DDL 
         (criação de tabelas, alterações, etc..) 
 
       
-### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
+### 8. INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
         a) Script das instruções relativas a inclusão de dados 
 	Requisito mínimo: (Script dev conter: Drop para exclusão de tabelas + create definição de para tabelas e estruturas de dados + insert para dados a serem inseridos)
         OBS
@@ -99,7 +99,7 @@ No dia do test drive, visita a concessionária e avalia pessoalmente o carro. To
         2) script deve ser incluso no template em um arquivo no formato .SQL
 
 
-### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
+### 9. TABELAS E PRINCIPAIS CONSULTAS<br>
     OBS: Usa template da disciplina disponibilizado no Colab.<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 
@@ -140,7 +140,7 @@ No dia do test drive, visita a concessionária e avalia pessoalmente o carro. To
 
 ># Marco de Entrega 03: Do item 9.2 até o ítem 9.10 (10 PTS)<br>
 
-### 10 RELATÓRIOS E GRÁFICOS
+### 10. RELATÓRIOS E GRÁFICOS
 
 #### a) análises e resultados provenientes do banco de dados desenvolvido (usar modelo disponível)
 #### b) link com exemplo de relatórios será disponiblizado pelo professor no AVA
@@ -148,7 +148,7 @@ No dia do test drive, visita a concessionária e avalia pessoalmente o carro. To
 
     
 
-### 11	AJUSTES DA DOCUMENTAÇÃO, CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇAO FINAL <br>
+### 11. AJUSTES DA DOCUMENTAÇÃO, CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇAO FINAL <br>
 
 #### a) Modelo (pecha kucha)<br>
 #### b) Tempo de apresentação 6:40 
@@ -160,7 +160,7 @@ No dia do test drive, visita a concessionária e avalia pessoalmente o carro. To
 
 
 
-### 12 FORMATACAO NO GIT:<br> 
+### 12. FORMATACAO NO GIT:<br> 
 https://help.github.com/articles/basic-writing-and-formatting-syntax/
 <comentario no git>
     
