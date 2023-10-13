@@ -72,11 +72,47 @@ No dia do test drive, visita a concessionária e avalia pessoalmente o carro. To
 
 
 #### 5.2 Descrição dos dados 
-    [objeto]: [descrição do objeto]
-    CARRO: Tabela que armazena informações referentes aos carros vendidos pela concessionária
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+
+    CARRO: Tabela que armazena informações referentes aos carros cadastrados no sistema;
+    CODIGO: campo que armazena o número identificador de cada carro no sistema;
+    NOME: campo que armazena o nome de cada carro;
+    MARCA: campo que armazena a marca de cada carro;
+    TIPO_CARROCERIA: campo que armazena o tipo de carroceria de cada carro;
+    PRECO: campo que armazena o preço de cada carro;
+    USADO/NOVO: campo que armazena a informação se o carro especificado é usado ou novo.
+    MODELO: campo que armazena o modelo do carro especificado.
+
+    INFO_TECNICAS: Tabela que armazena as informações técnicas para cada carro do sistema;
+    RECURSOS: campo que armazena os recursos para cada carro;
+    MOTOR: campo que armazena o modelo de motor de cada carro;
+    DESEMPENHO: campo que armazena o desempenho (Km/L) de cada carro;
+    TRANSMISSAO: campo que armazena o modelo de transmissão do carro especificado;
+    TRACAO: campo que armazena a informação de qual a tração do carro especificado;
+    SUSPENSAO: campo que armazena o modelo de suspensao de cada carro;
+    FREIOS: campo que armazena a informação sobre o tipo de freios para cada carro;
+    DIRECAO: campo que armazena a informação sobre o tipo de direção para cada carro;
+    DIMENSOES: campo que armazena as dimensões do carro especificado.
+
+    CONCESSIONARIA: Tabela que armazena informações relativas as Concessionárias;
+    CODIGO: campo que armazena o codigo identificador de cada concessionária;
+    NOME: campo que armazena o nome de cada concessionária;
+    ENDEREÇO: campo que armazena o endereço da loja fisica da concessionária;
+    TELEFONE: campo que armazena o telefone da loja fisica da concessionária;
+    AVALIACAO: campo que armazena a avaliação da concessionária gerada a partir de todas as avaliações feitas pelos clientes.
+
+    PESSOA: Tabela que armazena informações relativas a pessoa interessada em adquirir um carro;
+    CODIGO: campo que armazena o codigo identificador de cada pessoa cadastrada no sistema;
+    NOME: campo que armazena o nome da pessoa cadastrada;
+    ENDERECO: campo que armazena o endereço da pessoa cadastrada;
+    PREFERENCIA: campo que armazena a preferência de cada pessoa;
+    ORCAMENTO: campo que armazena quanto a pessoa cadastrada tem para comprar o carro;
+    TIPO_CARRO: campo que armazena a infromação de qual tipo de carro a pessoa está buscando.
+
+    AGENDAMENTO: Tabela que armazena informações sobre os agendamentos de visitas das pessoas às concessionárias;
+    CODIGO: campo que armazena o codigo identificador de cada agendamento realizado;
+    DATA: campo que  armazena a data que foi agendada para a visita;
+    HORA: campo que armazena o horário para qual a agendada a visita.
+
 
 ># Marco de Entrega 01: Do item 1 até o item 5.2 (5 PTS) <br> 
 
