@@ -73,7 +73,7 @@ No dia do test drive, visita a concessionária e avalia pessoalmente o carro. To
 
 #### 5.2 Descrição dos dados 
     [objeto]: [descrição do objeto]
-    
+    CARRO: Tabela que armazena informações referentes aos carros vendidos pela concessionária
     EXEMPLO:
     CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
     CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
