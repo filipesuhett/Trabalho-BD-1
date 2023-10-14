@@ -70,8 +70,8 @@ No dia do test drive, visita a concessionária e avalia pessoalmente o carro. To
     Sistema de empregos: Erick Kenzo, Jhonata Polito Demuner
     Sistema rodoviário: Lara Aguilar, Rodolfo Oliveira, Erick Gama, João Marcos Pimentel
 
-    Os dois grupos analisaram o modelo conceitual feito baseado no mini-mundo também apresentado. 
-    Ambos concordam que o modelo está condizente, sendo um único detalhe o atributo avaliação, na entidade concessionaria, que pode funcionar tanto como atributo quanto como uma nova entidade, estando correto em ambos os casos.
+Os dois grupos acima analisaram o modelo conceitual feito baseado no mini-mundo também apresentado. 
+Ambos concordam que o modelo está condizente, sendo um único detalhe o atributo avaliação, na entidade concessionaria, que pode funcionar tanto como atributo quanto como uma nova entidade, estando correto em ambos os casos.
 
 
 #### 5.2 Descrição dos dados 
