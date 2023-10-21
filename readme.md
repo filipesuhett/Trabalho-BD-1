@@ -88,7 +88,7 @@ Ambos concordam que o modelo está condizente, sendo um único detalhe o atribut
     INFO_TECNICAS: Tabela que armazena as informações técnicas para cada carro do sistema;
     RECURSOS: campo que armazena os recursos para cada carro;
     MOTOR: campo que armazena o modelo de motor de cada carro;
-    DESEMPENHO: campo que armazena o desempenho (Km/L) de cada carro;
+    DESEMPENHO: campo que armazena as cilindradas de cada carro;
     TRANSMISSAO: campo que armazena o modelo de transmissão do carro especificado;
     TRACAO: campo que armazena a informação de qual a tração do carro especificado;
     SUSPENSAO: campo que armazena o modelo de suspensao de cada carro;
