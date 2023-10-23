@@ -121,6 +121,9 @@ Ambos concordam que o modelo está condizente, sendo um único detalhe o atribut
 ># Marco de Entrega 01: Do item 1 até o item 5.2 (5 PTS) <br> 
 
 ### 6. MODELO LÓGICO<br>
+
+![image](https://github.com/filipesuhett/Trabalho-BD-1-Veiculos/assets/72825142/66b5ac45-5dc5-4704-a8ed-03d960685304)
+
         a) inclusão do esquema lógico do banco de dados
         b) verificação de correspondencia com o modelo conceitual 
         (não serão aceitos modelos que não estejam em conformidade)
