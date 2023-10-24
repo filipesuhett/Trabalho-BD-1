@@ -132,16 +132,495 @@ Ambos concordam que o modelo está condizente, sendo um único detalhe o atribut
         (não serão aceitos modelos que não estejam em conformidade)
 
 ### 7. MODELO FÍSICO<br>
-        a) inclusão das instruções de criacão das estruturas em SQL/DDL 
-        (criação de tabelas, alterações, etc..) 
+	CREATE TABLE MODELO (
+	    id INTEGER PRIMARY KEY,
+	    nome VARCHAR,
+	    sigla VARCHAR,
+	    numero_motor VARCHAR,
+	    ano INTEGER
+	);
+	
+	CREATE TABLE MARCA (
+	    id INTEGER PRIMARY KEY,
+	    nome VARCHAR
+	);
+	
+	CREATE TABLE USUARIO (
+	    id INTEGER PRIMARY KEY,
+	    nome VARCHAR,
+	    endereco VARCHAR,
+	    email VARCHAR
+	);
+	
+	CREATE TABLE CONCESSIONARIA (
+	    FK_USUARIO_id INTEGER PRIMARY KEY,
+	    FOREIGN KEY (FK_USUARIO_id) REFERENCES USUARIO(id)
+	);
+	
+	CREATE TABLE PESSOA (
+	    orcamento FLOAT,
+	    preferencia VARCHAR,
+	    tipo_carro VARCHAR,
+	    FK_USUARIO_id INTEGER PRIMARY KEY,
+	    FOREIGN KEY (FK_USUARIO_id) REFERENCES USUARIO(id)
+	);
+	
+	CREATE TABLE AVALIACAO (
+	    id INTEGER PRIMARY KEY,
+	    nota FLOAT,
+	    comentario VARCHAR,
+	    FK_PESSOA_FK_USUARIO_id INTEGER,
+	    FOREIGN KEY (FK_PESSOA_FK_USUARIO_id) REFERENCES PESSOA(FK_USUARIO_id)
+	);
+	
+	CREATE TABLE MOTOR (
+	    id INTEGER PRIMARY KEY,
+	    tipo VARCHAR
+	);
+	
+	CREATE TABLE TRANSMISSAO (
+	    id INTEGER PRIMARY KEY,
+	    tipo VARCHAR
+	);
+	
+	CREATE TABLE TRACAO (
+	    id INTEGER PRIMARY KEY,
+	    tipo VARCHAR
+	);
+	
+	CREATE TABLE SUSPENSAO (
+	    id INTEGER PRIMARY KEY,
+	    tipo VARCHAR
+	);
+	
+	CREATE TABLE INFO_TECNICAS (
+	    id INTEGER PRIMARY KEY,
+	    potencia INTEGER,
+	    freio_abs BOOLEAN,
+	    direcao_hidraulica BOOLEAN,
+	    dimensoes VARCHAR,
+	    FK_MOTOR_id INTEGER,
+	    FK_TRANSMISSAO_id INTEGER,
+	    FK_TRACAO_id INTEGER,
+	    FK_SUSPENSAO_id INTEGER,
+	    FOREIGN KEY (FK_MOTOR_id) REFERENCES MOTOR(id),
+	    FOREIGN KEY (FK_TRANSMISSAO_id) REFERENCES TRANSMISSAO(id),
+	    FOREIGN KEY (FK_TRACAO_id) REFERENCES TRACAO(id),
+	    FOREIGN KEY (FK_SUSPENSAO_id) REFERENCES SUSPENSAO(id)
+	);
+	
+	CREATE TABLE TIPO_CARROCERIA (
+	    id INTEGER PRIMARY KEY,
+	    tipo VARCHAR,
+	    descricao VARCHAR
+	);
+	
+	CREATE TABLE CARRO (
+	    id INTEGER PRIMARY KEY,
+	    preco FLOAT,
+	    eh_novo BOOLEAN,
+	    FK_INFO_TECNICAS_id INTEGER,
+	    FK_MARCA_id INTEGER,
+	    FK_MODELO_id INTEGER,
+	    FK_TIPO_CARROCERIA_id INTEGER,
+	    FOREIGN KEY (FK_INFO_TECNICAS_id) REFERENCES INFO_TECNICAS(id),
+	    FOREIGN KEY (FK_MARCA_id) REFERENCES MARCA(id),
+	    FOREIGN KEY (FK_MODELO_id) REFERENCES MODELO(id),
+	    FOREIGN KEY (FK_TIPO_CARROCERIA_id) REFERENCES TIPO_CARROCERIA(id)
+	);
+	
+	CREATE TABLE Compra (
+	    FK_PESSOA_FK_USUARIO_id INTEGER,
+	    FK_CARRO_id INTEGER,
+	    FOREIGN KEY (FK_PESSOA_FK_USUARIO_id) REFERENCES PESSOA(FK_USUARIO_id),
+	    FOREIGN KEY (FK_CARRO_id) REFERENCES CARRO(id)
+	);
+	
+	CREATE TABLE AGENDAMENTO (
+	    codigo INTEGER PRIMARY KEY,
+	    data DATE,
+	    hora TIME,
+	    FK_PESSOA_FK_USUARIO_id INTEGER,
+	    FK_CONCESSIONARIA_FK_USUARIO_id INTEGER,
+	    FOREIGN KEY (FK_PESSOA_FK_USUARIO_id) REFERENCES PESSOA(FK_USUARIO_id),
+	    FOREIGN KEY (FK_CONCESSIONARIA_FK_USUARIO_id) REFERENCES CONCESSIONARIA(FK_USUARIO_id)
+	);
 
       
 ### 8. INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
-        a) Script das instruções relativas a inclusão de dados 
-	Requisito mínimo: (Script dev conter: Drop para exclusão de tabelas + create definição de para tabelas e estruturas de dados + insert para dados a serem inseridos)
-        OBS
-	1) Criar um novo banco de dados para testar a restauracao (em caso de falha na restauração o grupo não pontuará neste quesito)
-        2) script deve ser incluso no template em um arquivo no formato .SQL
+        DROP TABLE IF EXISTS Compra CASCADE;
+	DROP TABLE IF EXISTS AVALIACAO CASCADE;
+	DROP TABLE IF EXISTS AGENDAMENTO CASCADE;
+	DROP TABLE IF EXISTS CARRO CASCADE;
+	DROP TABLE IF EXISTS INFO_TECNICAS CASCADE;
+	DROP TABLE IF EXISTS PESSOA CASCADE;
+	DROP TABLE IF EXISTS CONCESSIONARIA CASCADE;
+	DROP TABLE IF EXISTS USUARIO CASCADE;
+	DROP TABLE IF EXISTS TIPO_CARROCERIA CASCADE;
+	DROP TABLE IF EXISTS MARCA CASCADE;
+	DROP TABLE IF EXISTS MODELO CASCADE;
+	DROP TABLE IF EXISTS SUSPENSAO CASCADE;
+	DROP TABLE IF EXISTS TRACAO CASCADE;
+	DROP TABLE IF EXISTS TRANSMISSAO CASCADE;
+	DROP TABLE IF EXISTS MOTOR CASCADE;
+	
+	/* logico_sprints_v6: */
+	
+	CREATE TABLE MODELO (
+	    id INTEGER PRIMARY KEY,
+	    nome VARCHAR,
+	    sigla VARCHAR,
+	    numero_motor VARCHAR,
+	    ano INTEGER
+	);
+	
+	CREATE TABLE MARCA (
+	    id INTEGER PRIMARY KEY,
+	    nome VARCHAR
+	);
+	
+	CREATE TABLE USUARIO (
+	    id INTEGER PRIMARY KEY,
+	    nome VARCHAR,
+	    endereco VARCHAR,
+	    email VARCHAR
+	);
+	
+	CREATE TABLE CONCESSIONARIA (
+	    FK_USUARIO_id INTEGER PRIMARY KEY,
+	    FOREIGN KEY (FK_USUARIO_id) REFERENCES USUARIO(id)
+	);
+	
+	CREATE TABLE PESSOA (
+	    orcamento FLOAT,
+	    preferencia VARCHAR,
+	    tipo_carro VARCHAR,
+	    FK_USUARIO_id INTEGER PRIMARY KEY,
+	    FOREIGN KEY (FK_USUARIO_id) REFERENCES USUARIO(id)
+	);
+	
+	CREATE TABLE AVALIACAO (
+	    id INTEGER PRIMARY KEY,
+	    nota FLOAT,
+	    comentario VARCHAR,
+	    FK_PESSOA_FK_USUARIO_id INTEGER,
+	    FOREIGN KEY (FK_PESSOA_FK_USUARIO_id) REFERENCES PESSOA(FK_USUARIO_id)
+	);
+	
+	CREATE TABLE MOTOR (
+	    id INTEGER PRIMARY KEY,
+	    tipo VARCHAR
+	);
+	
+	CREATE TABLE TRANSMISSAO (
+	    id INTEGER PRIMARY KEY,
+	    tipo VARCHAR
+	);
+	
+	CREATE TABLE TRACAO (
+	    id INTEGER PRIMARY KEY,
+	    tipo VARCHAR
+	);
+	
+	CREATE TABLE SUSPENSAO (
+	    id INTEGER PRIMARY KEY,
+	    tipo VARCHAR
+	);
+	
+	CREATE TABLE INFO_TECNICAS (
+	    id INTEGER PRIMARY KEY,
+	    potencia INTEGER,
+	    freio_abs BOOLEAN,
+	    direcao_hidraulica BOOLEAN,
+	    dimensoes VARCHAR,
+	    FK_MOTOR_id INTEGER,
+	    FK_TRANSMISSAO_id INTEGER,
+	    FK_TRACAO_id INTEGER,
+	    FK_SUSPENSAO_id INTEGER,
+	    FOREIGN KEY (FK_MOTOR_id) REFERENCES MOTOR(id),
+	    FOREIGN KEY (FK_TRANSMISSAO_id) REFERENCES TRANSMISSAO(id),
+	    FOREIGN KEY (FK_TRACAO_id) REFERENCES TRACAO(id),
+	    FOREIGN KEY (FK_SUSPENSAO_id) REFERENCES SUSPENSAO(id)
+	);
+	
+	CREATE TABLE TIPO_CARROCERIA (
+	    id INTEGER PRIMARY KEY,
+	    tipo VARCHAR,
+	    descricao VARCHAR
+	);
+	
+	CREATE TABLE CARRO (
+	    id INTEGER PRIMARY KEY,
+	    preco FLOAT,
+	    eh_novo BOOLEAN,
+	    FK_INFO_TECNICAS_id INTEGER,
+	    FK_MARCA_id INTEGER,
+	    FK_MODELO_id INTEGER,
+	    FK_TIPO_CARROCERIA_id INTEGER,
+	    FOREIGN KEY (FK_INFO_TECNICAS_id) REFERENCES INFO_TECNICAS(id),
+	    FOREIGN KEY (FK_MARCA_id) REFERENCES MARCA(id),
+	    FOREIGN KEY (FK_MODELO_id) REFERENCES MODELO(id),
+	    FOREIGN KEY (FK_TIPO_CARROCERIA_id) REFERENCES TIPO_CARROCERIA(id)
+	);
+	
+	CREATE TABLE Compra (
+	    FK_PESSOA_FK_USUARIO_id INTEGER,
+	    FK_CARRO_id INTEGER,
+	    FOREIGN KEY (FK_PESSOA_FK_USUARIO_id) REFERENCES PESSOA(FK_USUARIO_id),
+	    FOREIGN KEY (FK_CARRO_id) REFERENCES CARRO(id)
+	);
+	
+	CREATE TABLE AGENDAMENTO (
+	    codigo INTEGER PRIMARY KEY,
+	    data DATE,
+	    hora TIME,
+	    FK_PESSOA_FK_USUARIO_id INTEGER,
+	    FK_CONCESSIONARIA_FK_USUARIO_id INTEGER,
+	    FOREIGN KEY (FK_PESSOA_FK_USUARIO_id) REFERENCES PESSOA(FK_USUARIO_id),
+	    FOREIGN KEY (FK_CONCESSIONARIA_FK_USUARIO_id) REFERENCES CONCESSIONARIA(FK_USUARIO_id)
+	);
+	
+	-- MODELO
+	INSERT INTO MODELO (id, nome, sigla, numero_motor, ano) VALUES 
+	(1, 'Sedan X1', 'SX1', true, 2022),
+	(2, 'SUV Y2', 'SY2', false, 2023),
+	(3, 'Hatchback Z3', 'HZ3', true, 2022),
+	(4, 'Crossover A4', 'CA4', false, 2023),
+	(5, 'Sedan B5', 'SB5', true, 2023),
+	(6, 'Hatchback C6', 'HC6', true, 2022),
+	(7, 'SUV D7', 'SD7', false, 2023),
+	(8, 'Crossover E8', 'CE8', false, 2022),
+	(9, 'Hatchback F9', 'HF9', true, 2023),
+	(10, 'Sedan G10', 'SG10', true, 2022);
+	
+	-- MARCA
+	INSERT INTO MARCA (id, nome) VALUES 
+	(1, 'MarcaX'),
+	(2, 'MarcaY'),
+	(3, 'MarcaZ'),
+	(4, 'MarcaA'),
+	(5, 'MarcaB'),
+	(6, 'MarcaC'),
+	(7, 'MarcaD'),
+	(8, 'MarcaE'),
+	(9, 'MarcaF'),
+	(10, 'MarcaG');
+	
+	-- USUARIO
+	INSERT INTO USUARIO (id, nome, endereco, email) VALUES 
+	(1, 'João Silva', 'Rua A, 123', 'joao.silva@example.com'),
+	(2, 'Maria Santos', 'Av. B, 456', 'maria.santos@example.com'),
+	(3, 'José Oliveira', 'Rua C, 789', 'jose.oliveira@example.com'),
+	(4, 'Ana Souza', 'Av. D, 012', 'ana.souza@example.com'),
+	(5, 'Pedro Pereira', 'Rua E, 345', 'pedro.pereira@example.com'),
+	(6, 'Sofia Lima', 'Av. F, 678', 'sofia.lima@example.com'),
+	(7, 'Carlos Santos', 'Rua G, 901', 'carlos.santos@example.com'),
+	(8, 'Luiza Silva', 'Av. H, 234', 'luiza.silva@example.com'),
+	(9, 'Marcos Oliveira', 'Rua I, 567', 'marcos.oliveira@example.com'),
+	(10, 'Laura Souza', 'Av. J, 890', 'laura.souza@example.com');
+	
+	-- CONCESSIONARIA
+	INSERT INTO CONCESSIONARIA (FK_USUARIO_id) VALUES 
+	(1),
+	(2),
+	(3),
+	(4),
+	(5),
+	(6),
+	(7),
+	(8),
+	(9),
+	(10);
+	
+	-- PESSOA
+	INSERT INTO PESSOA (orcamento, preferencia, tipo_carro, FK_USUARIO_id) VALUES 
+	(30000.00, 'SUV', 'Novo', 1),
+	(25000.00, 'Sedan', 'Usado', 2),
+	(35000.00, 'Hatchback', 'Novo', 3),
+	(20000.00, 'Crossover', 'Usado', 4),
+	(28000.00, 'SUV', 'Novo', 5),
+	(32000.00, 'Hatchback', 'Novo', 6),
+	(26000.00, 'Sedan', 'Usado', 7),
+	(30000.00, 'Crossover', 'Novo', 8),
+	(27000.00, 'Hatchback', 'Novo', 9),
+	(29000.00, 'Sedan', 'Novo', 10);
+	
+	-- AVALIACAO
+	INSERT INTO AVALIACAO (id, nota, comentario, FK_PESSOA_FK_USUARIO_id) VALUES 
+	(1, 4.5, 'Ótima experiência!', 1),
+	(2, 3.2, 'Poderia ser melhor.', 2),
+	(3, 4.0, 'Muito satisfeito.', 3),
+	(4, 3.7, 'Algumas melhorias necessárias.', 4),
+	(5, 4.8, 'Excelente atendimento.', 5),
+	(6, 3.5, 'Boa experiência no geral.', 6),
+	(7, 4.2, 'Recomendo.', 7),
+	(8, 3.9, 'Satisfeito com a compra.', 8),
+	(9, 4.6, 'Bom serviço.', 9),
+	(10, 3.8, 'Satisfeito com o carro.', 10);
+	
+	-- MOTOR
+	INSERT INTO MOTOR (id, tipo) VALUES 
+	(1, 'MotorX'),
+	(2, 'MotorY'),
+	(3, 'MotorZ'),
+	(4, 'MotorA'),
+	(5, 'MotorB'),
+	(6, 'MotorC'),
+	(7, 'MotorD'),
+	(8, 'MotorE'),
+	(9, 'MotorF'),
+	(10, 'MotorG');
+	
+	-- TRANSMISSAO
+	INSERT INTO TRANSMISSAO (id, tipo) VALUES 
+	(1, 'TransmissaoX'),
+	(2, 'TransmissaoY'),
+	(3, 'TransmissaoZ'),
+	(4, 'TransmissaoA'),
+	(5, 'TransmissaoB'),
+	(6, 'TransmissaoC'),
+	(7, 'TransmissaoD'),
+	(8, 'TransmissaoE'),
+	(9, 'TransmissaoF'),
+	(10, 'TransmissaoG');
+	
+	-- TRACAO
+	INSERT INTO TRACAO (id, tipo) VALUES 
+	(1, 'TracaoX'),
+	(2, 'TracaoY'),
+	(3, 'TracaoZ'),
+	(4, 'TracaoA'),
+	(5, 'TracaoB'),
+	(6, 'TracaoC'),
+	(7, 'TracaoD'),
+	(8, 'TracaoE'),
+	(9, 'TracaoF'),
+	(10, 'TracaoG');
+	
+	-- SUSPENSAO
+	INSERT INTO SUSPENSAO (id, tipo) VALUES 
+	(1, 'SuspensaoX'),
+	(2, 'SuspensaoY'),
+	(3, 'SuspensaoZ'),
+	(4, 'SuspensaoA'),
+	(5, 'SuspensaoB'),
+	(6, 'SuspensaoC'),
+	(7, 'SuspensaoD'),
+	(8, 'SuspensaoE'),
+	(9, 'SuspensaoF'),
+	(10, 'SuspensaoG');
+	
+	-- INFO_TECNICAS
+	INSERT INTO INFO_TECNICAS (id, potencia, freio_abs, direcao_hidraulica, dimensoes, FK_MOTOR_id, FK_TRANSMISSAO_id, FK_TRACAO_id, FK_SUSPENSAO_id) VALUES 
+	(1, 150, true, true, 'Dimensoes1', 1, 1, 1, 1),
+	(2, 200, true, false, 'Dimensoes2', 2, 2, 2, 2),
+	(3, 180, true, true, 'Dimensoes3', 3, 3, 3, 3),
+	(4, 170, false, true, 'Dimensoes4', 4, 4, 4, 4),
+	(5, 190, true, false, 'Dimensoes5', 5, 5, 5, 5),
+	(6, 160, false, true, 'Dimensoes6', 6, 6, 6, 6),
+	(7, 210, true, false, 'Dimensoes7', 7, 7, 7, 7),
+	(8, 220, false, true, 'Dimensoes8', 8, 8, 8, 8),
+	(9, 195, true, true, 'Dimensoes9', 9, 9, 9, 9),
+	(10, 185, false, false, 'Dimensoes10', 10, 10, 10, 10);
+	
+	-- TIPO_CARROCERIA
+	INSERT INTO TIPO_CARROCERIA (id, tipo, descricao) VALUES 
+	(1, 'TipoX', 'DescricaoX'),
+	(2, 'TipoY', 'DescricaoY'),
+	(3, 'TipoZ', 'DescricaoZ'),
+	(4, 'TipoA', 'DescricaoA'),
+	(5, 'TipoB', 'DescricaoB'),
+	(6, 'TipoC', 'DescricaoC'),
+	(7, 'TipoD', 'DescricaoD'),
+	(8, 'TipoE', 'DescricaoE'),
+	(9, 'TipoF', 'DescricaoF'),
+	(10, 'TipoG', 'DescricaoG');
+	
+	-- CARRO
+	INSERT INTO CARRO (id, preco, eh_novo, FK_INFO_TECNICAS_id, FK_MARCA_id, FK_MODELO_id, FK_TIPO_CARROCERIA_id) VALUES 
+	(1, 35000.00, true, 1, 1, 1, 1),
+	(2, 28000.00, false, 2, 2, 2, 2),
+	(3, 38000.00, true, 3, 3, 3, 3),
+	(4, 27000.00, false, 4, 4, 4, 4),
+	(5, 32000.00, true, 5, 5, 5, 5),
+	(6, 30000.00, true, 6, 6, 6, 6),
+	(7, 40000.00, false, 7, 7, 7, 7),
+	(8, 31000.00, true, 8, 8, 8, 8),
+	(9, 33000.00, true, 9, 9, 9, 9),
+	(10, 29500.00, true, 10, 10, 10, 10);
+	
+	-- Compra
+	INSERT INTO Compra (FK_PESSOA_FK_USUARIO_id, FK_CARRO_id) VALUES 
+	(1, 1),
+	(2, 2),
+	(3, 3),
+	(4, 4),
+	(5, 5),
+	(6, 6),
+	(7, 7),
+	(8, 8),
+	(9, 9),
+	(10, 10);
+	
+	-- AGENDAMENTO
+	INSERT INTO AGENDAMENTO (codigo, data, hora, FK_PESSOA_FK_USUARIO_id, FK_CONCESSIONARIA_FK_USUARIO_id) VALUES 
+	(1, '2023-10-25', '10:00', 1, 1),
+	(2, '2023-11-05', '14:30', 2, 2),
+	(3, '2023-11-10', '11:00', 3, 3),
+	(4, '2023-11-15', '15:00', 4, 4),
+	(5, '2023-11-20', '13:30', 5, 5),
+	(6, '2023-11-25', '12:00', 6, 6),
+	(7, '2023-11-30', '16:00', 7, 7),
+	(8, '2023-12-05', '09:30', 8, 8),
+	(9, '2023-12-10', '17:00', 9, 9),
+	(10, '2023-12-15', '08:30', 10, 10);
+	
+	
+	-- Tabela MODELO
+	SELECT * FROM MODELO;
+	
+	-- Tabela MARCA
+	SELECT * FROM MARCA;
+	
+	-- Tabela USUARIO
+	SELECT * FROM USUARIO;
+	
+	-- Tabela CONCESSIONARIA
+	SELECT * FROM CONCESSIONARIA;
+	
+	-- Tabela PESSOA
+	SELECT * FROM PESSOA;
+	
+	-- Tabela AVALIACAO
+	SELECT * FROM AVALIACAO;
+	
+	-- Tabela MOTOR
+	SELECT * FROM MOTOR;
+	
+	-- Tabela TRANSMISSAO
+	SELECT * FROM TRANSMISSAO;
+	
+	-- Tabela TRACAO
+	SELECT * FROM TRACAO;
+	
+	-- Tabela SUSPENSAO
+	SELECT * FROM SUSPENSAO;
+	
+	-- Tabela INFO_TECNICAS
+	SELECT * FROM INFO_TECNICAS;
+	
+	-- Tabela TIPO_CARROCERIA
+	SELECT * FROM TIPO_CARROCERIA;
+	
+	-- Tabela CARRO
+	SELECT * FROM CARRO;
+	
+	-- Tabela Compra
+	SELECT * FROM Compra;
+	
+	-- Tabela AGENDAMENTO
+	SELECT * FROM AGENDAMENTO;
+
 
 
 ### 9. TABELAS E PRINCIPAIS CONSULTAS<br>
