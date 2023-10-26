@@ -439,19 +439,14 @@ Ambos concordam que o modelo está condizente, sendo um único detalhe o atribut
 	(3, 'José Oliveira', 'Rua C, 789', 'jose.oliveira@example.com'),
 	(4, 'Ana Souza', 'Av. D, 012', 'ana.souza@example.com'),
 	(5, 'Pedro Pereira', 'Rua E, 345', 'pedro.pereira@example.com'),
-	(6, 'Sofia Lima', 'Av. F, 678', 'sofia.lima@example.com'),
-	(7, 'Carlos Santos', 'Rua G, 901', 'carlos.santos@example.com'),
-	(8, 'Luiza Silva', 'Av. H, 234', 'luiza.silva@example.com'),
-	(9, 'Marcos Oliveira', 'Rua I, 567', 'marcos.oliveira@example.com'),
-	(10, 'Laura Souza', 'Av. J, 890', 'laura.souza@example.com');
+	(6, 'Carro Bom', 'Av. F, 678', 'Carro Bom@example.com'),
+	(7, 'Sedan da Hora', 'Rua G, 901', 'SedandaHora@example.com'),
+	(8, 'SUVWINS', 'Av. H, 234', 'SUVWINS@example.com'),
+	(9, 'ApenasCaminhonete', 'Rua I, 567', 'ApenasCaminhonete@example.com'),
+	(10, 'VanForever', 'Av. J, 890', 'VanForever@example.com');
 	
 	-- CONCESSIONARIA
 	INSERT INTO CONCESSIONARIA (FK_USUARIO_id) VALUES 
-	(1),
-	(2),
-	(3),
-	(4),
-	(5),
 	(6),
 	(7),
 	(8),
@@ -464,12 +459,7 @@ Ambos concordam que o modelo está condizente, sendo um único detalhe o atribut
 	(25000.00, 'Sedan', 'Usado', 2),
 	(35000.00, 'Hatchback', 'Novo', 3),
 	(20000.00, 'Crossover', 'Usado', 4),
-	(28000.00, 'SUV', 'Novo', 5),
-	(32000.00, 'Hatchback', 'Novo', 6),
-	(26000.00, 'Sedan', 'Usado', 7),
-	(30000.00, 'Crossover', 'Novo', 8),
-	(27000.00, 'Hatchback', 'Novo', 9),
-	(29000.00, 'Sedan', 'Novo', 10);
+	(28000.00, 'SUV', 'Novo', 5);
 	
 	-- AVALIACAO
 	INSERT INTO AVALIACAO (id, nota, comentario, FK_PESSOA_FK_USUARIO_id) VALUES 
@@ -477,12 +467,7 @@ Ambos concordam que o modelo está condizente, sendo um único detalhe o atribut
 	(2, 3.2, 'Poderia ser melhor.', 2),
 	(3, 4.0, 'Muito satisfeito.', 3),
 	(4, 3.7, 'Algumas melhorias necessárias.', 4),
-	(5, 4.8, 'Excelente atendimento.', 5),
-	(6, 3.5, 'Boa experiência no geral.', 6),
-	(7, 4.2, 'Recomendo.', 7),
-	(8, 3.9, 'Satisfeito com a compra.', 8),
-	(9, 4.6, 'Bom serviço.', 9),
-	(10, 3.8, 'Satisfeito com o carro.', 10);
+	(5, 4.8, 'Excelente atendimento.', 5);
 	
 	-- MOTOR
 	INSERT INTO MOTOR (id, tipo) VALUES 
@@ -581,25 +566,15 @@ Ambos concordam que o modelo está condizente, sendo um único detalhe o atribut
 	(2, 2),
 	(3, 3),
 	(4, 4),
-	(5, 5),
-	(6, 6),
-	(7, 7),
-	(8, 8),
-	(9, 9),
-	(10, 10);
+	(5, 5);
 	
 	-- AGENDAMENTO
 	INSERT INTO AGENDAMENTO (codigo, data, hora, FK_PESSOA_FK_USUARIO_id, FK_CONCESSIONARIA_FK_USUARIO_id) VALUES 
-	(1, '2023-10-25', '10:00', 1, 1),
-	(2, '2023-11-05', '14:30', 2, 2),
-	(3, '2023-11-10', '11:00', 3, 3),
-	(4, '2023-11-15', '15:00', 4, 4),
-	(5, '2023-11-20', '13:30', 5, 5),
-	(6, '2023-11-25', '12:00', 6, 6),
-	(7, '2023-11-30', '16:00', 7, 7),
-	(8, '2023-12-05', '09:30', 8, 8),
-	(9, '2023-12-10', '17:00', 9, 9),
-	(10, '2023-12-15', '08:30', 10, 10);
+	(1, '2023-10-25', '10:00', 1, 6),
+	(2, '2023-11-05', '14:30', 2, 7),
+	(3, '2023-11-10', '11:00', 3, 8),
+	(4, '2023-11-15', '15:00', 4, 9),
+	(5, '2023-11-20', '13:30', 5, 10);
 	
 	
 	-- Tabela MODELO
@@ -646,6 +621,7 @@ Ambos concordam que o modelo está condizente, sendo um único detalhe o atribut
 	
 	-- Tabela AGENDAMENTO
 	SELECT * FROM AGENDAMENTO;
+
 
 
 
