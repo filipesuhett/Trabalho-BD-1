@@ -81,38 +81,64 @@ Ambos concordam que o modelo está condizente, sendo um único detalhe o atribut
 
     CARRO: Tabela que armazena informações referentes aos carros cadastrados no sistema;
     CODIGO: campo que armazena o número identificador de cada carro no sistema;
-    NOME: campo que armazena o nome de cada carro;
-    MARCA: campo que armazena a marca de cada carro;
-    TIPO_CARROCERIA: campo que armazena o tipo de carroceria de cada carro;
     PRECO: campo que armazena o preço de cada carro;
-    USADO/NOVO: campo que armazena a informação se o carro especificado é usado ou novo.
-    MODELO: campo que armazena o modelo do carro especificado.
+    EH_NOVO: campo que armazena a informação se o carro especificado é novo ou não.
+
+    MARCA: Tabela que armazena informações sobre a marca do carro cadastrado;
+    ID: campo que armazena o número identificador da marca;
+    NOME: campo que armazena o nome da marca.
+    
+    MODELO: Tabela que armazena informações sobre os modelos de carro;
+    ID: campo que armazena o número identificador do modelo de carro;
+    NOME: campo que armazena o nome do modelo do carro;
+    SIGLA: campo que armazena a sigla do modelo do carro;
+    NUMERO_MOTO: campo que armazena o numero do motor do carro;
+    ANO: campo que armazena o ano do carro.
+
+    TIPO_CARROCERIA: Tabela que armazena informações sobre o tipo de carroceria de carro;
+    ID: campo que armazena o número identificador do tipo de carroceria;
+    TIPO: campo que armazena o tipo de carroceria;
+    DESCRICAO: campo que armazena a descrição do tipo de carroceria especificado.
 
     INFO_TECNICAS: Tabela que armazena as informações técnicas para cada carro do sistema;
-    RECURSOS: campo que armazena os recursos para cada carro;
-    MOTOR: campo que armazena o modelo de motor de cada carro;
-    DESEMPENHO: campo que armazena as cilindradas de cada carro;
-    TRANSMISSAO: campo que armazena o modelo de transmissão do carro especificado;
-    TRACAO: campo que armazena a informação de qual a tração do carro especificado;
-    SUSPENSAO: campo que armazena o modelo de suspensao de cada carro;
-    FREIOS: campo que armazena a informação sobre o tipo de freios para cada carro;
-    DIRECAO: campo que armazena a informação sobre o tipo de direção para cada carro;
+    POTENCIA: campo que armazena a potencia, em cavalos, de cada carro;
+    FREIOS_ABS: campo que armazena a informação se o freio do carro é ABS ou não;
+    DIRECAO_HIDRAULICA: campo que armazena a informação se a direção do carro é hidraulica ou não;
     DIMENSOES: campo que armazena as dimensões do carro especificado.
 
-    CONCESSIONARIA: Tabela que armazena informações relativas as Concessionárias;
-    CODIGO: campo que armazena o codigo identificador de cada concessionária;
-    NOME: campo que armazena o nome de cada concessionária;
-    ENDEREÇO: campo que armazena o endereço da loja fisica da concessionária;
-    TELEFONE: campo que armazena o telefone da loja fisica da concessionária;
-    AVALIACAO: campo que armazena a avaliação da concessionária gerada a partir de todas as avaliações feitas pelos clientes.
+    MOTOR: Tabela que armazena informações sobre motores de carro;
+    ID: campo que armazena o número identificador do motor;
+    TIPO: campo que armazena o tipo de motor;
 
-    PESSOA: Tabela que armazena informações relativas a pessoa interessada em adquirir um carro;
-    CODIGO: campo que armazena o codigo identificador de cada pessoa cadastrada no sistema;
-    NOME: campo que armazena o nome da pessoa cadastrada;
-    ENDERECO: campo que armazena o endereço da pessoa cadastrada;
+    TRANSMISSAO: Tabela que armazena informações sobre Transmissões de carro;
+    ID: campo que armazena o número identificador da Transmissão;
+    TIPO: campo que armazena o tipo de transmissão.
+
+    TRACAO: Tabela que armazena informações sobre os tipo de tração dos veiculos;
+    ID: campo que armazena o número identificador da tração;
+    TIPO: campo que armazena qual a tração.
+
+    SUSPENSAO: Tabela que armazena informações sobre os tipos de suspensão de veiculos;
+    ID: campo que armazena o número identificador do tipo de suspensão;
+    TIPO: campo que armazena o tipo de suspensão.
+
+    USUARIO: Tabela que armazena as informações de usuário;
+    ID: campo que armazena o número identificador dos usuários do aplicativo;
+    NOME: campo que armazena o nome do usuário;
+    ENDEREÇO: campo que armazena o endereço do usuário;
+    EMAIL: campo que armazena o email do usuário.
+
+    CONCESSIONARIA: Tabela que armazena informações relativas aos usuários que são Concessionárias;
+
+    PESSOA: Tabela que armazena informações relativas aos usuários que são pessoas físicas;
     PREFERENCIA: campo que armazena a preferência de cada pessoa;
     ORCAMENTO: campo que armazena quanto a pessoa cadastrada tem para comprar o carro;
     TIPO_CARRO: campo que armazena a infromação de qual tipo de carro a pessoa está buscando.
+
+    AVALIACAO: Tabela que armazena informações sobre as avalições realizadas;
+    ID: campo que armazena o número identificador de cada avaliação;
+    NOTA: campo que armazena a nota atribuida na avaliação;
+    COMENTARIO: campo que armazena o comentário realizado na avaliação.
 
     AGENDAMENTO: Tabela que armazena informações sobre os agendamentos de visitas das pessoas às concessionárias;
     CODIGO: campo que armazena o codigo identificador de cada agendamento realizado;
