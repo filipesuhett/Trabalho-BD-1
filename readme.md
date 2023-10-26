@@ -41,7 +41,7 @@ Caio Daniel Meireles de Souza: caiodaniel7437@gmail.com<br>
 
 > Uma pessoa interessada em adquirir um novo carro decide utilizar um Sistema de Auxílio à Compra de Carros para tornar sua decisão mais informada e conveniente. Primeiramente, ela se cadastra no sistema, fornecendo suas informações pessoais, como nome, endereço e preferências de compra, especificando seu orçamento e o tipo de carro que está buscando.
 Com o perfil criado, inicia a pesquisa filtrando os carros disponíveis com base em critérios como marca, modelo, tipo de carroceria, preço do veículo e se é usado ou novo, encontrando várias opções que se encaixam em suas preferências. Para uma decisão mais embasada, utiliza a função de comparação de carros do sistema, analisando detalhadamente diferentes modelos, comparando informações técnicas do carro (motor, desempenho, transmissão, tração, suspensão, freios, direção e dimensões do veículo) e preços. O usuário também pode deixar ou verificas as avaliações de outros motoristas disponíveis no sistema para ter certeza de que os locais de compra são de confiança e possuem um bom atendimento. Além disso, enquanto pesquisa, o usuário recebe notificações sobre ofertas especiais em carros semelhantes aos que está considerando, ajudando-a a se manter atualizada sobre oportunidades de economia.
-Após selecionar um dos carros, decide agendar um test drive usando o sistema. Localiza concessionárias locais que oferecem o carro desejado e faz um agendamento conveniente, armazenando data e hora (para que mais de um agendamento não seja marcado no mesmo momento). Concessionárias possuem informações como o nome das mesmas, telefone de contado e o endereço da unidade. Além disso, clientes podem avaliar as concessionárias em uma escala de 0-5 (estrutura do local, atendimento e outros aspéctos que podem ser observados pelos clientes durante a ida ao local), gerando uma única nota total para a unidade.  
+Após selecionar um dos carros, decide agendar um test drive usando o sistema. Localiza concessionárias locais que oferecem o carro desejado e faz um agendamento conveniente, armazenando data e hora (para que mais de um agendamento não seja marcado no mesmo momento). Concessionárias possuem informações como o nome das mesmas, email de contado e o endereço da unidade. Além disso, clientes podem avaliar as concessionárias em uma escala de 0-5 (estrutura do local, atendimento e outros aspéctos que podem ser observados pelos clientes durante a ida ao local), gerando uma única nota total para a unidade.  
 No dia do test drive, visita a concessionária e avalia pessoalmente o carro. Todo o processo que envolve testar o carro, a forma de pagamento e a compra efetiva é feito na concessionária, não tendo relação com o sistema.
 
 
@@ -49,11 +49,11 @@ No dia do test drive, visita a concessionária e avalia pessoalmente o carro. To
 #### 3.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
 
 > A Empresa necessita dos seguintes relatórios:
-* Relatório que mostre os municipios e estados que mais acessam o sistema, tal qual a quantidade de acessos
+* Relatório que mostre a quantidade de clientes, para assim saber quais épocas são mais movimentadas e se é possível determinar um padrão
 * Relatório que mostre os 20 carros mais acessados na semana, com a quantidade de acessos de cada
 * Relatorio que mostre as concessionárias mais populares/bem avaliadas entre os usuários do sistema, com suas localizações e respectiva avaliação final
 * Relatório que mostre as informações relacionadas ao perfil dos usuários do sistema. O relatório deve ter informações como: sexo, idade, modelos de carro preferidos, marcas preferidas e orçamento médio
-* Relatório que obtenha quantos clientes usuários fizeram a compra efetiva do carro com o auxílio do sistema. Deve mostrar a compatibilidade do carro comprado com as preferências anteriormente especificadas no perfil do cliente, assim como comparar o orçamento com o preço pago
+* Relatório que obtenha quantos clientes usuários fizeram o agendamento para um test drive com o auxílio do sistema. Deve mostrar a compatibilidade do carro escolhido com as preferências anteriormente especificadas no perfil do cliente, assim como comparar o orçamento com o preço do carro
 
     
 ### 5. MODELO CONCEITUAL<br>
