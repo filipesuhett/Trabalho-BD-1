@@ -52,7 +52,7 @@ No dia do test drive, visita a concessionária e avalia pessoalmente o carro. To
 * Relatório que mostre a quantidade de clientes, para assim saber quais épocas são mais movimentadas e se é possível determinar um padrão
 * Relatório que mostre os 20 carros mais acessados na semana, com a quantidade de acessos de cada
 * Relatorio que mostre as concessionárias mais populares/bem avaliadas entre os usuários do sistema, com suas localizações e respectiva avaliação final
-* Relatório que mostre as informações relacionadas ao perfil dos usuários do sistema. O relatório deve ter informações como: sexo, idade, modelos de carro preferidos, marcas preferidas e orçamento médio
+* Relatório que mostre as informações relacionadas ao perfil dos usuários do sistema. O relatório deve ter informações como: modelos de carro preferidos, marcas preferidas e orçamento médio
 * Relatório que obtenha quantos clientes usuários fizeram o agendamento para um test drive com o auxílio do sistema. Deve mostrar a compatibilidade do carro escolhido com as preferências anteriormente especificadas no perfil do cliente, assim como comparar o orçamento com o preço do carro
 
     
