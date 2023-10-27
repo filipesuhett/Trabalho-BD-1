@@ -133,7 +133,8 @@ Ambos concordam que o modelo está condizente, sendo um único detalhe o atribut
     PESSOA: Tabela que armazena informações relativas aos usuários que são pessoas físicas;
     PREFERENCIA: campo que armazena a preferência de cada pessoa;
     ORCAMENTO: campo que armazena quanto a pessoa cadastrada tem para comprar o carro;
-    TIPO_CARRO: campo que armazena a infromação de qual tipo de carro a pessoa está buscando.
+    TIPO_CARRO: campo que armazena a infromação de qual tipo de carro a pessoa está buscando;
+    DTNASC: campo que armazena a data de nascimento do usuário.
 
     AVALIACAO: Tabela que armazena informações sobre as avalições realizadas;
     ID: campo que armazena o número identificador de cada avaliação;
