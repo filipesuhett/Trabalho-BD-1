@@ -39,7 +39,7 @@ Caio Daniel Meireles de Souza: caiodaniel7437@gmail.com<br>
 
 ### 2. MINI-MUNDO<br>
 
-> Uma pessoa interessada em adquirir um novo carro decide utilizar um Sistema de Auxílio à Compra de Carros para tornar sua decisão mais informada e conveniente. Primeiramente, ela se cadastra no sistema, fornecendo suas informações pessoais, como nome, endereço e preferências de compra, especificando seu orçamento e o tipo de carro que está buscando.
+> Uma pessoa interessada em adquirir um novo carro decide utilizar um Sistema de Auxílio à Compra de Carros para tornar sua decisão mais informada e conveniente. Primeiramente, ela se cadastra no sistema, fornecendo suas informações pessoais, como nome, endereço, data de nascimento e preferências de compra, especificando seu orçamento e o tipo de carro que está buscando.
 Com o perfil criado, inicia a pesquisa filtrando os carros disponíveis com base em critérios como marca, modelo, tipo de carroceria, preço do veículo e se é usado ou novo, encontrando várias opções que se encaixam em suas preferências. Para uma decisão mais embasada, utiliza a função de comparação de carros do sistema, analisando detalhadamente diferentes modelos, comparando informações técnicas do carro (motor, desempenho, transmissão, tração, suspensão, freios, direção e dimensões do veículo) e preços. O usuário também pode deixar ou verificas as avaliações de outros motoristas disponíveis no sistema para ter certeza de que os locais de compra são de confiança e possuem um bom atendimento. Além disso, enquanto pesquisa, o usuário recebe notificações sobre ofertas especiais em carros semelhantes aos que está considerando, ajudando-a a se manter atualizada sobre oportunidades de economia.
 Após selecionar um dos carros, decide agendar um test drive usando o sistema. Localiza concessionárias locais que oferecem o carro desejado e faz um agendamento conveniente, armazenando data e hora (para que mais de um agendamento não seja marcado no mesmo momento). Concessionárias possuem informações como o nome das mesmas, email de contado e o endereço da unidade. Além disso, clientes podem avaliar as concessionárias em uma escala de 0-5 (estrutura do local, atendimento e outros aspéctos que podem ser observados pelos clientes durante a ida ao local), gerando uma única nota total para a unidade.  
 No dia do test drive, visita a concessionária e avalia pessoalmente o carro. Todo o processo que envolve testar o carro, a forma de pagamento e a compra efetiva é feito na concessionária, não tendo relação com o sistema.
@@ -323,6 +323,7 @@ Ambos concordam que o modelo está condizente, sendo um único detalhe o atribut
 	CREATE TABLE PESSOA (
 	    orcamento FLOAT,
 	    preferencia VARCHAR,
+     	    dtNasc DATE,
 	    tipo_carro VARCHAR,
 	    FK_USUARIO_id INTEGER PRIMARY KEY,
 	    FOREIGN KEY (FK_USUARIO_id) REFERENCES USUARIO(id)
@@ -457,12 +458,12 @@ Ambos concordam que o modelo está condizente, sendo um único detalhe o atribut
 	(10);
 	
 	-- PESSOA
-	INSERT INTO PESSOA (orcamento, preferencia, tipo_carro, FK_USUARIO_id) VALUES 
-	(30000.00, 'SUV', 'Novo', 1),
-	(25000.00, 'Sedan', 'Usado', 2),
-	(35000.00, 'Hatchback', 'Novo', 3),
-	(20000.00, 'Crossover', 'Usado', 4),
-	(28000.00, 'SUV', 'Novo', 5);
+	INSERT INTO PESSOA (orcamento, preferencia, tipo_carro,dtNasc, FK_USUARIO_id) VALUES 
+	(30000.00, 'SUV', '2000-01-01','Novo', 1),
+	(25000.00, 'Sedan','2000-01-01', 'Usado', 2),
+	(35000.00, 'Hatchback','1999-11-20', 'Novo', 3),
+	(20000.00, 'Crossover','2005-05-10', 'Usado', 4),
+	(28000.00, 'SUV', 'Novo','2000-10-12', 5);
 	
 	-- AVALIACAO
 	INSERT INTO AVALIACAO (id, nota, comentario, FK_PESSOA_FK_USUARIO_id) VALUES 
