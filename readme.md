@@ -31,10 +31,10 @@ O projeto em questão visa o desenvolvimento de um inovador sistema de vendas de
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
-Giovanna Scalfoni: giovanna.scalfoni@gmail.com<br>
-Filipe Suhett: filipe.gmx@gmail.com<br>
 Bruno Plazzi: brunoplazzi@hotmail.com<br>
 Caio Daniel Meireles de Souza: caiodaniel7437@gmail.com<br>
+Filipe Suhett: filipe.gmx@gmail.com<br>
+Giovanna Scalfoni: giovanna.scalfoni@gmail.com<br>
 
 
 ### 2. MINI-MUNDO<br>
