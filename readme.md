@@ -458,7 +458,7 @@ Ambos concordam que o modelo está condizente, sendo um único detalhe o atribut
 	(10);
 	
 	-- PESSOA
-	INSERT INTO PESSOA (orcamento, preferencia, tipo_carro,dtNasc, FK_USUARIO_id) VALUES 
+	INSERT INTO PESSOA (orcamento, tipo_carro, dtNasc , preferencia, FK_USUARIO_id) VALUES 
 	(30000.00, 'SUV', '2000-01-01','Novo', 1),
 	(25000.00, 'Sedan','2000-01-01', 'Usado', 2),
 	(35000.00, 'Hatchback','1999-11-20', 'Novo', 3),
