@@ -323,7 +323,7 @@ Ambos concordam que o modelo está condizente, sendo um único detalhe o atribut
 	CREATE TABLE PESSOA (
 	    orcamento FLOAT,
 	    preferencia VARCHAR,
-     	    dtNasc DATE,
+	 	    dtNasc DATE,
 	    tipo_carro VARCHAR,
 	    FK_USUARIO_id INTEGER PRIMARY KEY,
 	    FOREIGN KEY (FK_USUARIO_id) REFERENCES USUARIO(id)
@@ -412,29 +412,24 @@ Ambos concordam que o modelo está condizente, sendo um único detalhe o atribut
 	
 	-- MODELO
 	INSERT INTO MODELO (id, nome, sigla, numero_motor, ano) VALUES 
-	(1, 'Sedan X1', 'SX1', true, 2022),
-	(2, 'SUV Y2', 'SY2', false, 2023),
-	(3, 'Hatchback Z3', 'HZ3', true, 2022),
-	(4, 'Crossover A4', 'CA4', false, 2023),
-	(5, 'Sedan B5', 'SB5', true, 2023),
-	(6, 'Hatchback C6', 'HC6', true, 2022),
-	(7, 'SUV D7', 'SD7', false, 2023),
-	(8, 'Crossover E8', 'CE8', false, 2022),
-	(9, 'Hatchback F9', 'HF9', true, 2023),
-	(10, 'Sedan G10', 'SG10', true, 2022);
+	(1, 'HB20', 'S', '1234', 2019),
+	(2, 'Yaris', 'S', '12345', 2022),
+	(3, 'Tracker', 'SL', '234', 2021),
+	(4, 'Cruze', 'Sport', '098', 2022),
+	(5, 'Kicks', 'SL', '5678', 2017),
+	(6, 'Sentra', 'SV', '546', 2018),
+	(7, 'Pulse', 'X', '94802', 2022),
+	(8, 'Fastback', 'SP', '809', 2022),
+	(9, 'Civic', 'XLR', '998', 2013),
+	(10, 'HR-V', 'XS', '777', 2023);
 	
 	-- MARCA
 	INSERT INTO MARCA (id, nome) VALUES 
-	(1, 'MarcaX'),
-	(2, 'MarcaY'),
-	(3, 'MarcaZ'),
-	(4, 'MarcaA'),
-	(5, 'MarcaB'),
-	(6, 'MarcaC'),
-	(7, 'MarcaD'),
-	(8, 'MarcaE'),
-	(9, 'MarcaF'),
-	(10, 'MarcaG');
+	(1, 'Toyota'),
+	(2, 'Chevrolet'),
+	(3, 'Nissan'),
+	(4, 'Fiat'),
+	(5, 'Honda');
 	
 	-- USUARIO
 	INSERT INTO USUARIO (id, nome, endereco, email) VALUES 
@@ -459,11 +454,11 @@ Ambos concordam que o modelo está condizente, sendo um único detalhe o atribut
 	
 	-- PESSOA
 	INSERT INTO PESSOA (orcamento, preferencia, tipo_carro, dtNasc, FK_USUARIO_id) VALUES 
-	(30000.00, 'SUV', '2000-01-01','Novo', 1),
-	(25000.00, 'Sedan','2000-01-01', 'Usado', 2),
-	(35000.00, 'Hatchback','1999-11-20', 'Novo', 3),
-	(20000.00, 'Crossover','2005-05-10', 'Usado', 4),
-	(28000.00, 'SUV', 'Novo','2000-10-12', 5);
+	(30000.00, 'Novo', 'SUV', '2000-01-01', 1),
+	(25000.00, 'Usado', 'Sedan', '2000-01-01', 2),
+	(35000.00, 'Novo', 'Hatchback', '1999-11-20', 3),
+	(20000.00, 'Usado', 'Crossover', '2005-05-10', 4),
+	(28000.00, 'Novo', 'SUV', '2000-10-12', 5);
 	
 	-- AVALIACAO
 	INSERT INTO AVALIACAO (id, nota, comentario, FK_PESSOA_FK_USUARIO_id) VALUES 
@@ -475,94 +470,69 @@ Ambos concordam que o modelo está condizente, sendo um único detalhe o atribut
 	
 	-- MOTOR
 	INSERT INTO MOTOR (id, tipo) VALUES 
-	(1, 'MotorX'),
-	(2, 'MotorY'),
-	(3, 'MotorZ'),
-	(4, 'MotorA'),
-	(5, 'MotorB'),
-	(6, 'MotorC'),
-	(7, 'MotorD'),
-	(8, 'MotorE'),
-	(9, 'MotorF'),
-	(10, 'MotorG');
+	(1, 'SLK V10'),
+	(2, 'LPS V8'),
+	(3, 'RFD V6'),
+	(4, 'KLY V4');
 	
 	-- TRANSMISSAO
 	INSERT INTO TRANSMISSAO (id, tipo) VALUES 
-	(1, 'TransmissaoX'),
-	(2, 'TransmissaoY'),
-	(3, 'TransmissaoZ'),
-	(4, 'TransmissaoA'),
-	(5, 'TransmissaoB'),
-	(6, 'TransmissaoC'),
-	(7, 'TransmissaoD'),
-	(8, 'TransmissaoE'),
-	(9, 'TransmissaoF'),
-	(10, 'TransmissaoG');
+	(1, 'Manual'),
+	(2, 'CVT'),
+	(3, 'Sequencial'),
+	(4, 'Semi-Automatico');
 	
 	-- TRACAO
 	INSERT INTO TRACAO (id, tipo) VALUES 
-	(1, 'TracaoX'),
-	(2, 'TracaoY'),
-	(3, 'TracaoZ'),
-	(4, 'TracaoA'),
-	(5, 'TracaoB'),
-	(6, 'TracaoC'),
-	(7, 'TracaoD'),
-	(8, 'TracaoE'),
-	(9, 'TracaoF'),
-	(10, 'TracaoG');
+	(1, 'Dianteira'),
+	(2, 'Traseira'),
+	(3, '4x4');
 	
 	-- SUSPENSAO
 	INSERT INTO SUSPENSAO (id, tipo) VALUES 
-	(1, 'SuspensaoX'),
-	(2, 'SuspensaoY'),
-	(3, 'SuspensaoZ'),
-	(4, 'SuspensaoA'),
-	(5, 'SuspensaoB'),
-	(6, 'SuspensaoC'),
-	(7, 'SuspensaoD'),
-	(8, 'SuspensaoE'),
-	(9, 'SuspensaoF'),
-	(10, 'SuspensaoG');
+	(1, 'Eixo Rigido'),
+	(2, 'Feixe de Molas'),
+	(3, 'Dupla A'),
+	(4, 'Independente');
 	
 	-- INFO_TECNICAS
 	INSERT INTO INFO_TECNICAS (id, potencia, freio_abs, direcao_hidraulica, dimensoes, FK_MOTOR_id, FK_TRANSMISSAO_id, FK_TRACAO_id, FK_SUSPENSAO_id) VALUES 
-	(1, 150, true, true, 'Dimensoes1', 1, 1, 1, 1),
-	(2, 200, true, false, 'Dimensoes2', 2, 2, 2, 2),
-	(3, 180, true, true, 'Dimensoes3', 3, 3, 3, 3),
-	(4, 170, false, true, 'Dimensoes4', 4, 4, 4, 4),
-	(5, 190, true, false, 'Dimensoes5', 5, 5, 5, 5),
-	(6, 160, false, true, 'Dimensoes6', 6, 6, 6, 6),
-	(7, 210, true, false, 'Dimensoes7', 7, 7, 7, 7),
-	(8, 220, false, true, 'Dimensoes8', 8, 8, 8, 8),
-	(9, 195, true, true, 'Dimensoes9', 9, 9, 9, 9),
-	(10, 185, false, false, 'Dimensoes10', 10, 10, 10, 10);
+	(1, 150, true, true, '4x2x1,5', 4, 2, 1, 1),
+	(2, 200, true, false, '5x3x2', 3, 2, 1, 4),
+	(3, 180, true, true, '6x2x2', 4, 4, 2, 3),
+	(4, 170, false, true, '4x2x3', 4, 1, 1, 4),
+	(5, 190, true, false, '5x2x1', 2, 3, 2, 3),
+	(6, 160, false, true, '4x2x1,5', 3, 3, 3, 3),
+	(7, 210, true, false, '4x2x1,5', 1, 1, 1, 1),
+	(8, 220, false, true, '3x2,5x1', 2, 2, 2, 2),
+	(9, 195, true, true, '4x3x2', 4, 3, 2, 4),
+	(10, 185, false, false, '4x2x1,5', 1, 3, 2, 4);
 	
 	-- TIPO_CARROCERIA
 	INSERT INTO TIPO_CARROCERIA (id, tipo, descricao) VALUES 
-	(1, 'TipoX', 'DescricaoX'),
-	(2, 'TipoY', 'DescricaoY'),
-	(3, 'TipoZ', 'DescricaoZ'),
-	(4, 'TipoA', 'DescricaoA'),
-	(5, 'TipoB', 'DescricaoB'),
-	(6, 'TipoC', 'DescricaoC'),
-	(7, 'TipoD', 'DescricaoD'),
-	(8, 'TipoE', 'DescricaoE'),
-	(9, 'TipoF', 'DescricaoF'),
-	(10, 'TipoG', 'DescricaoG');
+	(1, 'Sedan médio', 'Conforto e espaço interno'),
+	(2, 'SUV Medio', 'Espaço para a familia'),
+	(3, 'Hatch', 'Agilidade na cidade'),
+	(4, 'Picape', 'Uso para carga e para passageiros'),
+	(5, 'utilitário', 'Baixo custo para transporte de cargas'),
+	(6, 'SUV Compacto', 'Opção mais barata de SUV'),
+	(7, 'SUV Grande', '7 lugares e tração integral'),
+	(8, 'Minivan', 'Versatilidade'),
+	(9, 'Sedan compacto', 'preço e porta malas mais amplos'),
+	(10, 'Sedan grande', 'Segmento premium');
 	
 	-- CARRO
 	INSERT INTO CARRO (id, preco, eh_novo, FK_INFO_TECNICAS_id, FK_MARCA_id, FK_MODELO_id, FK_TIPO_CARROCERIA_id) VALUES 
 	(1, 35000.00, true, 1, 1, 1, 1),
-	(2, 28000.00, false, 2, 2, 2, 2),
-	(3, 38000.00, true, 3, 3, 3, 3),
-	(4, 27000.00, false, 4, 4, 4, 4),
-	(5, 32000.00, true, 5, 5, 5, 5),
-	(6, 30000.00, true, 6, 6, 6, 6),
-	(7, 40000.00, false, 7, 7, 7, 7),
-	(8, 31000.00, true, 8, 8, 8, 8),
-	(9, 33000.00, true, 9, 9, 9, 9),
-	(10, 29500.00, true, 10, 10, 10, 10);
+	(2, 28000.00, false, 2, 1, 2, 1),
+	(3, 38000.00, true, 3, 2, 3, 2),
+	(4, 27000.00, false, 4, 2, 4, 1),
+	(5, 32000.00, true, 5, 3, 5, 6),
+	(6, 30000.00, true, 6, 3, 6, 1),
+	(7, 40000.00, false, 7, 4, 7, 2),
+	(8, 31000.00, true, 8, 4, 8, 2),
+	(9, 33000.00, true, 9, 5, 9, 1),
+	(10, 29500.00, true, 10, 5, 10, 6);
 	
 	-- Compra
 	INSERT INTO Compra (FK_PESSOA_FK_USUARIO_id, FK_CARRO_id) VALUES 
@@ -625,8 +595,6 @@ Ambos concordam que o modelo está condizente, sendo um único detalhe o atribut
 	
 	-- Tabela AGENDAMENTO
 	SELECT * FROM AGENDAMENTO;
-
-
 
 
 ### 9. TABELAS E PRINCIPAIS CONSULTAS<br>
