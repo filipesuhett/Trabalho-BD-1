@@ -188,9 +188,9 @@ Ambos concordam que o modelo está condizente, sendo um único detalhe o atribut
 	    email VARCHAR
 	);
 	
-	CREATE TABLE CONCESSIONARIA (
-	    FK_USUARIO_id INTEGER PRIMARY KEY,
-	    FOREIGN KEY (FK_USUARIO_id) REFERENCES USUARIO(id)
+	CREATE TABLE CONCESSIONARIA ( 
+    		FK_USUARIO_id INTEGER PRIMARY KEY,
+    		FOREIGN KEY (FK_USUARIO_id) REFERENCES USUARIO(id)
 	);
 	
 	CREATE TABLE PESSOA (
@@ -323,6 +323,7 @@ Ambos concordam que o modelo está condizente, sendo um único detalhe o atribut
 	);
 	
 	CREATE TABLE CONCESSIONARIA (
+ 		cnpj VARCHAR
 	    FK_USUARIO_id INTEGER PRIMARY KEY,
 	    FOREIGN KEY (FK_USUARIO_id) REFERENCES USUARIO(id)
 	);
@@ -452,12 +453,12 @@ Ambos concordam que o modelo está condizente, sendo um único detalhe o atribut
 	(10, 'VanForever', 'Av. J, 890', 'VanForever@example.com');
 	
 	-- CONCESSIONARIA
-	INSERT INTO CONCESSIONARIA (FK_USUARIO_id) VALUES 
-	(6),
-	(7),
-	(8),
-	(9),
-	(10);
+	INSERT INTO CONCESSIONARIA (cnpj, FK_USUARIO_id) VALUES 
+	('12.345.678/0001-90', 6),
+	('23.456.789/0001-01',7),
+	('34.567.890/0001-12',8),
+	('45.678.901/0001-23',9),
+	('56.789.012/0001-34',10);
 	
 	-- PESSOA
 	INSERT INTO PESSOA (orcamento, preferencia, tipo_carro, dtNasc, FK_USUARIO_id) VALUES 
