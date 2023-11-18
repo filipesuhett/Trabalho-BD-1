@@ -189,8 +189,9 @@ Ambos concordam que o modelo está condizente, sendo um único detalhe o atribut
 	);
 	
 	CREATE TABLE CONCESSIONARIA ( 
-    		FK_USUARIO_id INTEGER PRIMARY KEY,
-    		FOREIGN KEY (FK_USUARIO_id) REFERENCES USUARIO(id)
+    	    cnpj VARCHAR   
+	    FK_USUARIO_id INTEGER PRIMARY KEY,
+    	    FOREIGN KEY (FK_USUARIO_id) REFERENCES USUARIO(id)
 	);
 	
 	CREATE TABLE PESSOA (
@@ -323,7 +324,7 @@ Ambos concordam que o modelo está condizente, sendo um único detalhe o atribut
 	);
 	
 	CREATE TABLE CONCESSIONARIA (
- 		cnpj VARCHAR
+ 	    cnpj VARCHAR
 	    FK_USUARIO_id INTEGER PRIMARY KEY,
 	    FOREIGN KEY (FK_USUARIO_id) REFERENCES USUARIO(id)
 	);
