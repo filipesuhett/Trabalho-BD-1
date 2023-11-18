@@ -191,7 +191,7 @@ Ambos concordam que o modelo está condizente, sendo um único detalhe o atribut
 	CREATE TABLE CONCESSIONARIA ( 
     	    cnpj VARCHAR   
 	    FK_USUARIO_id INTEGER PRIMARY KEY,
-    	    FOREIGN KEY (FK_USUARIO_id) REFERENCES USUARIO(id)
+	    FOREIGN KEY (FK_USUARIO_id) REFERENCES USUARIO(id)
 	);
 	
 	CREATE TABLE PESSOA (
@@ -332,7 +332,7 @@ Ambos concordam que o modelo está condizente, sendo um único detalhe o atribut
 	CREATE TABLE PESSOA (
 	    orcamento FLOAT,
 	    preferencia VARCHAR,
-	 	    dtNasc DATE,
+	    dtNasc DATE,
 	    tipo_carro VARCHAR,
 	    FK_USUARIO_id INTEGER PRIMARY KEY,
 	    FOREIGN KEY (FK_USUARIO_id) REFERENCES USUARIO(id)
