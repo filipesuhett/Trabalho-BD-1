@@ -188,8 +188,8 @@ Ambos concordam que o modelo está condizente, sendo um único detalhe o atribut
 	    email VARCHAR
 	);
 	
-	CREATE TABLE CONCESSIONARIA ( 
-    	    cnpj VARCHAR   
+	CREATE TABLE CONCESSIONARIA (
+ 	    cnpj VARCHAR
 	    FK_USUARIO_id INTEGER PRIMARY KEY,
 	    FOREIGN KEY (FK_USUARIO_id) REFERENCES USUARIO(id)
 	);
