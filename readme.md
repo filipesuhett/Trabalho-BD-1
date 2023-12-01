@@ -49,11 +49,12 @@ No dia do test drive, visita a concessionária e avalia pessoalmente o carro. To
 #### 3.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
 
 > A Empresa necessita dos seguintes relatórios:
-* Relatório que mostre a quantidade de clientes, para assim saber quais épocas são mais movimentadas e se é possível determinar um padrão
-* Relatório que mostre os 20 carros mais acessados na semana, com a quantidade de acessos de cada
-* Relatorio que mostre as concessionárias mais populares/bem avaliadas entre os usuários do sistema, com suas localizações e respectiva avaliação final
-* Relatório que mostre as informações relacionadas ao perfil dos usuários do sistema. O relatório deve ter informações como o orçamento médio e se o carro vuscado costuma ser novo ou usado
-* Relatório que obtenha quantos clientes usuários fizeram o agendamento para um test drive com o auxílio do sistema. Deve mostrar a compatibilidade do carro escolhido com as preferências anteriormente especificadas no perfil do cliente, assim como comparar o orçamento com o preço do carro
+* Relatório com as concessionárias mais bem avaliadas entre os usuários do sistema
+* Relatório com as informações relacionadas aos carros disponíveis no sistema. Questões como modelo de motor, tração, transmissão e suspensão.
+* Relatório de quantos agendamentos cada concessionária recebeu com o auxílio do sistema
+* Relatório com a quantidade de carros vendidos de acordo se ele é usado ou novo e do ano de fabricação
+* Relatório de quantos carros são vendidos por marca e qual o valor médio de cada marca
+
 
     
 ### 5. MODELO CONCEITUAL<br>
