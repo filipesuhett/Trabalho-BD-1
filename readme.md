@@ -890,7 +890,7 @@ Os seguintes tópicos foram feitos e organizados no Colab. Link a seguir:
 
 ### 10. RELATÓRIOS E GRÁFICOS
 A seguir, o link do colab onde foram feitos os relatórios: 
-	https://colab.research.google.com/drive/10ZrxDePS2s975dSGYxJH1Ly9g2-DISu_ 
+ https://colab.research.google.com/drive/10ZrxDePS2s975dSGYxJH1Ly9g2-DISu_ 
 
 #### a) análises e resultados provenientes do banco de dados desenvolvido (usar modelo disponível)
 #### b) link com exemplo de relatórios será disponiblizado pelo professor no AVA
