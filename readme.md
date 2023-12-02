@@ -150,10 +150,6 @@ Ambos concordam que o modelo está condizente, sendo um único detalhe o atribut
     DATA: campo que  armazena a data que foi agendada para a visita;
     HORA: campo que armazena o horário para qual a agendada a visita.
 
-    COMPRA: relação entre pessoa e carro;
-    DATA_HORA: campo que armazena a data e a hora da compra do carro;
-    PRECO: campo que armazena o preço pago na compra do carro.
-
 
 ># Marco de Entrega 01: Do item 1 até o item 5.2 (5 PTS) <br> 
 
