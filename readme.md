@@ -891,7 +891,8 @@ https://colab.research.google.com/drive/10ZrxDePS2s975dSGYxJH1Ly9g2-DISu_?usp=sh
 ### 11. AJUSTES DA DOCUMENTAÇÃO, CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇAO FINAL <br>
 
 #### a) Modelo (pecha kucha)<br>
-	Slides da apresentação: https://docs.google.com/presentation/d/1Dz_eb6xFFWOOFnBgvoSQkJtSGn6O7KGtyoW4JNXBwBs/edit?usp=sharing
+Slides da apresentação: 
+https://docs.google.com/presentation/d/1Dz_eb6xFFWOOFnBgvoSQkJtSGn6O7KGtyoW4JNXBwBs/edit?usp=sharing
 
 #### b) Tempo de apresentação 6:40 
 
