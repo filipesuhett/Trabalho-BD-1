@@ -888,14 +888,6 @@ Os seguintes tópicos foram feitos e organizados no Colab. Link a seguir:
 A seguir, o link do colab onde foram feitos os relatórios: 
 https://colab.research.google.com/drive/10ZrxDePS2s975dSGYxJH1Ly9g2-DISu_?usp=sharing 
 
-#### a) análises e resultados provenientes do banco de dados desenvolvido (usar modelo disponível)
-#### b) link com exemplo de relatórios será disponiblizado pelo professor no AVA
-https://colab.research.google.com/drive/10ZrxDePS2s975dSGYxJH1Ly9g2-DISu_?usp=sharing
-
-#### OBS: Esta é uma atividade de grande relevância no contexto do trabalho. Mantenha o foco nos 5 principais relatórios/resultados visando obter o melhor resultado possível.
-
-    
-
 ### 11. AJUSTES DA DOCUMENTAÇÃO, CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇAO FINAL <br>
 
 #### a) Modelo (pecha kucha)<br>
