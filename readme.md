@@ -842,7 +842,7 @@ Ambos concordam que o modelo está condizente, sendo um único detalhe o atribut
 	SELECT * FROM AGENDAMENTO;
 
 ### 9. TABELAS E PRINCIPAIS CONSULTAS<br>
-Os seguintes tópicos foram feitos e organizados no Colab. Link a seguir: 
+Os seguintes subtópicos corespondentes ao tópico "9" foram feitos e organizados no Colab. Link a seguir: 
 	https://colab.research.google.com/drive/1aYu0eD-_TnxyzKvVAlqT8S1UWihWf7R6?usp=sharing 
     
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
